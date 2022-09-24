@@ -1,0 +1,18 @@
+.img-fluid{
+    margin-left: 2.5rem;
+}
+
+.btn-outline-dark{
+    margin-left: 50rem;
+}
+
+.titulo{
+    text-align: center;
+    font-family: cursive;
+    text-decoration: coral;
+}
+
+
+@media screen and (max-width: 767px) {
+    
+}
