@@ -15,14 +15,14 @@
         <div class="card border-dark" style="max-width:70rem;">
             <div class="card-header text-center">Registro</div>
             <div class="card-body">
-                <div class="row">
-                    <div class="col-4">
+                <div class="columnas row" >
+                    <div class="pp col-4">
                         <input class="form-control m-1" type="text" onkeypress="return soloLetras(event);" required placeholder="Ingrese Nombre" id="nombre">
                         <input class="form-control m-1" type="text" onkeypress="return soloLetras(event);" required placeholder="Ingrese Apellido" id="apellido">
                         <input class="form-control m-1" type="text" placeholder="Ingrese Direccion" id="direccion">
                         <input class="form-control m-1" type="text" onkeypress="return soloLetras(event);" required placeholder="Ingrese Estado Civil" id="estadoCivil">
                     </div>
-                    <div class="col-4">
+                    <div class="pp col-4">
                         <input class="form-control m-1" type="text" onkeypress="return soloNumeros(event);" required placeholder="Ingrese Cedula" id="cedula">
                         <input class="form-control m-1" type="text" onkeypress="return soloNumeros(event);" required minlength="1" maxlength="3" placeholder="Ingrese Edad" id="edad">
                         <select class="form-control m-1" name="genero" id="generoUsuario">
@@ -35,27 +35,31 @@
                     <div class="col-4">
                         <img class="img-fluid" src="img/register.jpg" alt="">
                     </div>
+                    <button class="btn btn-outline-dark" onclick="registrar()">Registrar</button>
+                    <button class="btn btn-outline-primary" onclick="listar()">Listar</button>
                 </div>
-                <button class="btn btn-outline-dark" onclick="registrar()">Registrar</button>
-                <button class="btn btn-outline-primary" onclick="listar()">Listar</button>
+
             </div>
         </div>
-        <table class="table table-success table-striped">
-            <thead>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Direccion</th>
-                <th>Est. Civil</th>
-                <th>Cedula</th>
-                <th>Edad</th>
-                <th>Genero</th>
-                <th>Tel.</th>
-            </thead>
-            <tbody id="usuTabla">
-               
-            </tbody>
-        </table>
 
+        <div class="div-tabla">
+            <table class="table table-success table-striped">
+                <thead>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Direccion</th>
+                    <th>Est. Civil</th>
+                    <th>Cedula</th>
+                    <th>Edad</th>
+                    <th>Genero</th>
+                    <th>Tel.</th>
+                </thead>
+                <tbody id="usuTabla">
+                   
+                </tbody>
+            </table>    
+        </div>
+        
 
     </div>
     <script src="formulario.js"></script>

@@ -2,8 +2,11 @@
     margin-left: 2.5rem;
 }
 
-.btn-outline-dark{
-    margin-left: 50rem;
+.btn{
+    /* margin-left: 50rem; */
+    width: 30%;
+    margin: 0 auto;
+
 }
 
 .titulo{
@@ -12,7 +15,33 @@
     text-decoration: coral;
 }
 
+.div-tabla{
+    width: 100%;
+    overflow-x: auto ;
 
-@media screen and (max-width: 767px) {
-    
+}
+.table{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 414px) {
+    .titulo{
+        font-size: 25px;
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+    }
+    .img-fluid{
+        display: none;
+    }
+    .pp{
+        width: 50%;
+    }
+
+    .btn{
+        margin-left: -3rem;
+    }
 }
