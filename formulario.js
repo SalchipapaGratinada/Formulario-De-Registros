@@ -16,6 +16,7 @@ const listar = () => {
     }
     bodyTabla.innerHTML = contenido
 }
+console.log("")
 
 const registrar = () => {
     if (validacionCampos()) {
